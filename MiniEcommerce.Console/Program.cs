@@ -64,9 +64,7 @@ while (executando)
                 var produtos = catalogo.Listar();
 
                 if (produtos.Count == 0)
-                {
                     Console.WriteLine("Nenhum produto cadastrado.");
-                }
 
                 foreach (var produto in produtos)
                 {
@@ -131,9 +129,7 @@ while (executando)
                 Console.WriteLine("\n=== SEU CARRINHO ===");
 
                 if (carrinho.Itens.Count == 0)
-                {
                     Console.WriteLine("Carrinho vazio.");
-                }
 
                 foreach (var item in carrinho.Itens)
                 {
