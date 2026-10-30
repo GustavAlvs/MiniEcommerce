@@ -4,6 +4,9 @@ public class CarrinhoDeCompras
 {
     private readonly Dictionary<Produto, int> _itens = new();
 
+    // Permite consultar os produtos e suas quantidades
+    public IReadOnlyDictionary<Produto, int> Itens => _itens;
+
     public void Adicionar(Produto produto, int quantidade)
     {
         if (quantidade <= 0)
